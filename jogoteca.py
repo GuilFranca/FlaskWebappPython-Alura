@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 
 class Jogo:
@@ -37,7 +37,8 @@ def criar():
 
     listaJogos.append(jogo)
 
-    return render_template('lista.html', titulo='Jogos', jogos=listaJogos)
+    # Redireciona para a página em questão
+    return redirect('/')
 
 
 app.run(debug=True)
