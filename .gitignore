@@ -3,3 +3,6 @@ __pycache__
 
 # Ignorar o ambiente virtual
 .venv
+
+# Ignorara os arquivos .idea
+.idea
